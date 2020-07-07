@@ -14,6 +14,6 @@ Recipe App UI
     </br>
     <img src="/Screenshots/3.png" width="400px"</img> 
     </br>
-    <img src="/Screenshots/41.png" width="400px"</img> 
+    <img src="/Screenshots/4.png" width="400px"</img> 
     </br>
 </div>
