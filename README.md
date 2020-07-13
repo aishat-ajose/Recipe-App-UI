@@ -8,4 +8,4 @@ Recipe App UI
     <img src="/Screenshots/2.png" width="400px"</img> 
 </div>
 
-![Recipe App Demo](demo/recipe.gif)
+![Recipe App Demo](/Screenshots/recipe.gif)
