@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
@@ -16,6 +18,7 @@ class _HomePageState extends State<HomePage> {
     'Drinks': Icon(MaterialIcons.local_bar)
   };
   List<String> options = ['df', 'ty', 'rt', 'tu','dk', 'py', 'lt', 'mu'];
+  List<String> images = ['assets/pic3.jpg','assets/pic4.jpg','assets/pic5.jpg','assets/pic6.jpg','assets/pic7.jpg','assets/pic8.jpg'];
   List<int> fav = [1,5,7,9];
   int _currentIndex = 0;
   String selected = 'Main';
@@ -101,6 +104,7 @@ class _HomePageState extends State<HomePage> {
               scrollDirection: Axis.horizontal,
               itemCount: 5,
               itemBuilder: (context, index){
+                int num = Random().nextInt(6);
                 return Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
@@ -110,7 +114,7 @@ class _HomePageState extends State<HomePage> {
                       width: MediaQuery.of(context).size.width/3 + 15 ,
                       decoration: BoxDecoration(
                         image: DecorationImage(
-                          image: AssetImage('assets/pic1.jpg'), fit: BoxFit.cover,
+                          image: AssetImage(images[num]), fit: BoxFit.cover,
                         ),
                         borderRadius: BorderRadius.circular(15)
                       ),

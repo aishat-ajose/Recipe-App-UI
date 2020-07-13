@@ -18,7 +18,7 @@ Widget recipes(List<String> options, _currentIndex, context, bool fav){
             width: double.infinity,
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('assets/pic2.jpg'), fit: BoxFit.cover,
+                image: AssetImage(fav ?'assets/pic6.jpg': "assets/pic4.jpg"), fit: BoxFit.cover,
               ),
               borderRadius: BorderRadius.circular(15)
             ),

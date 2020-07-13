@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 
 class DetailsPage extends StatelessWidget {
-  bool fav = true;
+  final bool fav = true;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -10,6 +10,7 @@ class DetailsPage extends StatelessWidget {
         children: [
           Container(height: MediaQuery.of(context).size.height,),
           Container(
+            alignment: Alignment.center,
             height: MediaQuery.of(context).size.height/2,
             width: double.infinity,
             decoration: BoxDecoration(
@@ -17,6 +18,7 @@ class DetailsPage extends StatelessWidget {
                 image: AssetImage('assets/pic2.jpg'), fit: BoxFit.cover,
               ),
             ),
+            child: Icon(Icons.play_arrow, size: 50, color: Colors.white,)
           ),
           Positioned(
             top: MediaQuery.of(context).size.height/2 - 70,
@@ -98,7 +100,7 @@ class DetailsPage extends StatelessWidget {
   Widget steps(int number){
     return Container(
       padding: EdgeInsets.all(10),
-      child: Text('$number.  D/mali_winsys( 3857): EGLint new window surface (egl_winsys_display *, void *, EGLSurface, EGLConfig, egl winsys surface.'),
+      child: Text('$number.  The challenges in learning from data have led to a revolution in the statistical sciences.'),
     );
   }
 
